@@ -9,7 +9,7 @@ date: "2024-02-05"
 
 Este chunk debería marcarse con echo=FALSE y message=FALSE. ¿Tal vez los demás también? Esto ya dependerá de las preferencias personales de cada quien y el cómo quiere presentar sus resultados.
 
-```{r entorno}
+```{r entorno, echo=FALSE, message=FALSE}
 library(coronavirus)
 library(tidyverse)
 
@@ -17,8 +17,9 @@ casos <- coronavirus::coronavirus
 ```
 
 ## Antecedentes
-
 Se empieza definiendo un poco de contexto en 3 párrafos:
+
+#Antecedentes
 
 * ¿Qué es el COVID19? Es un virus, se transmite por vía aerea, causa diversos síntomas, etc...
 
@@ -233,11 +234,13 @@ T_Mortalidad |>
 
 ## Conclusiones
 
-* Se pueden escribir un párrafo o dos con respecto a los resultados observados y a la situación del COVID19 a cuatro años de haber iniciado la pandemia.
+A cuatro años del inicio de la pandemia de COVID-19, la situación global ha experimentado una transformación significativa. En sus primeras etapas, el mundo se enfrentó a un desafío sin precedentes, con sistemas de salud desbordados, medidas de confinamiento estrictas y una carrera contrarreloj para desarrollar vacunas eficaces. Desde entonces, gracias a los avances científicos y a una respuesta coordinada a nivel internacional, se han administrado miles de millones de dosis de vacunas, lo que ha permitido reducir significativamente las tasas de mortalidad y de hospitalización asociadas al virus.
 
+Hoy en día, aunque el COVID-19 sigue presente y surgen nuevas variantes, muchas sociedades han aprendido a convivir con el virus. Las campañas de vacunación continúan, con énfasis en las dosis de refuerzo para mantener la inmunidad y proteger a las poblaciones vulnerables. La pandemia ha dejado lecciones importantes sobre la importancia de la preparación y la cooperación global ante emergencias sanitarias. Sin embargo, persisten desafíos, como la distribución equitativa de las vacunas y la gestión de la fatiga pandémica en la población. A medida que el mundo avanza, es crucial mantener una vigilancia continua y adaptarse a las circunstancias cambiantes para asegurar la salud pública a largo plazo.
 ## Bibliografía
 
-* Se agregan las referencias necesarias para citar los documentos y reportes utilizados.
+Andersen, K. G., Rambaut, A., Lipkin, W. I., Holmes, E. C., & Garry, R. F. (2020). The proximal origin of SARS-CoV-2. Nature Medicine, 26(4), 450-452. https://doi.org/10.1038/s41591-020-0820-9
+
 * Se debe incluir también la cita al paquete de datos `coronavirus` de R.
 
 # Pasos a seguir para subir el reporte a GitHub
